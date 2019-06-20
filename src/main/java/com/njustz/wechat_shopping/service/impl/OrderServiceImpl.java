@@ -1,13 +1,23 @@
 package com.njustz.wechat_shopping.service.impl;
 
 import com.njustz.wechat_shopping.dto.OrderDTO;
+import com.njustz.wechat_shopping.entity.OrderDetail;
+import com.njustz.wechat_shopping.entity.OrderMaster;
+import com.njustz.wechat_shopping.entity.ProductInfo;
+import com.njustz.wechat_shopping.enums.ResultEnum;
+import com.njustz.wechat_shopping.exception.SellException;
+import com.njustz.wechat_shopping.repository.OrderDetailRepository;
 import com.njustz.wechat_shopping.repository.OrderMasterRepository;
 import com.njustz.wechat_shopping.service.OrderService;
 import com.njustz.wechat_shopping.service.ProductInfoService;
+import com.njustz.wechat_shopping.utils.KeyUtil;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+
+import java.math.BigDecimal;
 
 /**
  * @author njustz
@@ -21,18 +31,47 @@ public class OrderServiceImpl implements OrderService {
     private ProductInfoService productInfoService;
 
     @Autowired
-    private OrderMasterRepository repository;
+    private OrderDetailRepository orderDetailRepository;
+
+    @Autowired
+    private OrderMasterRepository orderMasterRepository;
 
     @Override
     public OrderDTO create(OrderDTO orderDTO) {
 
-        //查询商品数量，价格
+        //生成订单Id
+        String orderId = KeyUtil.genUniqueKey();
+        //存储总价
+        BigDecimal orderAmount = new BigDecimal(0);
 
-        //计算总价
+        //1.查询商品数量，价格
+        for(OrderDetail orderDetail:orderDTO.getOrderDetailList()){
+            ProductInfo productInfo = productInfoService.findOne(orderDetail.getProductId());
+            if(productInfo == null){
+                throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
+            }
 
-        //写入订单数据库
+            //2.计算订单总价
+            orderAmount = orderDetail.getProductPrice().
+                    multiply(new BigDecimal(orderDetail.getProductQuantity()))
+                    .add(orderAmount);
 
-        //扣库存
+            //订单详情入库(order_detail)
+            orderDetail.setDetailId(KeyUtil.genUniqueKey());
+            orderDetail.setOrderId(orderId);
+            BeanUtils.copyProperties(productInfo, orderDetail);
+            orderDetailRepository.save(orderDetail);
+
+        }
+
+        //3.写入订单数据库(order_master)
+        OrderMaster orderMaster = new OrderMaster();
+        orderMaster.setOrderId(orderId);
+        orderMaster.setOrderAmount(orderAmount);
+        BeanUtils.copyProperties(orderDTO, orderMaster);
+        orderMasterRepository.save(orderMaster);
+
+        //4.扣库存
 
         return null;
     }
