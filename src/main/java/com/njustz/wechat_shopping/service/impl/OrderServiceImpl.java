@@ -1,5 +1,6 @@
 package com.njustz.wechat_shopping.service.impl;
 
+import com.njustz.wechat_shopping.dto.CartDTO;
 import com.njustz.wechat_shopping.dto.OrderDTO;
 import com.njustz.wechat_shopping.entity.OrderDetail;
 import com.njustz.wechat_shopping.entity.OrderMaster;
@@ -16,8 +17,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author njustz
@@ -37,6 +41,7 @@ public class OrderServiceImpl implements OrderService {
     private OrderMasterRepository orderMasterRepository;
 
     @Override
+    @Transactional
     public OrderDTO create(OrderDTO orderDTO) {
 
         //生成订单Id
@@ -72,8 +77,11 @@ public class OrderServiceImpl implements OrderService {
         orderMasterRepository.save(orderMaster);
 
         //4.扣库存
+        List<CartDTO> cartDTOList = orderDTO.getOrderDetailList().stream().map(e ->
+                new CartDTO(e.getProductId(), e.getProductQuantity())).collect(Collectors.toList());
+        productInfoService.decreaseStock(cartDTOList);
 
-        return null;
+        return orderDTO;
     }
 
     @Override

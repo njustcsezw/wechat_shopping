@@ -1,5 +1,6 @@
 package com.njustz.wechat_shopping.service.impl;
 
+import com.njustz.wechat_shopping.dto.CartDTO;
 import com.njustz.wechat_shopping.entity.ProductInfo;
 import com.njustz.wechat_shopping.repository.ProductInfoRepository;
 import com.njustz.wechat_shopping.service.ProductInfoService;
@@ -38,5 +39,15 @@ public class ProductInfoServiceImpl implements ProductInfoService {
     @Override
     public ProductInfo save(ProductInfo productInfo) {
         return repository.save(productInfo);
+    }
+
+    @Override
+    public void increaseStock(List<CartDTO> cartDTOList) {
+
+    }
+
+    @Override
+    public void decreaseStock(List<CartDTO> cartDTOList) {
+
     }
 }
