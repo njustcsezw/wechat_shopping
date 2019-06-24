@@ -8,6 +8,7 @@ import javax.persistence.Id;
 import java.math.BigDecimal;
 
 /**
+ * 订单详情
  * @author njustz
  * @date 2019/5/28
  */
@@ -34,7 +35,5 @@ public class OrderDetail {
 
     //商品小图
     private String productIcon;
-
-
 
 }

@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f0289fd-858c-4fe0-bb99-9664d488e9b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/converter/OrderMaster2OrderDTOConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/njustz/wechat_shopping/service/impl/OrderServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/dto/CartDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/dto/CartDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/ProductInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/ProductInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/entity/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/entity/OrderDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/enums/ResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/enums/ResultEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/impl/OrderServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/impl/ProductInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/impl/ProductInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/njustz/wechat_shopping/dto/OrderDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/njustz/wechat_shopping/dto/OrderDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/njustz/wechat_shopping/service/ProductInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/njustz/wechat_shopping/service/ProductInfoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/njustz/wechat_shopping/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/njustz/wechat_shopping/service/impl/OrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/njustz/wechat_shopping/entity/OrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/njustz/wechat_shopping/entity/OrderDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/njustz/wechat_shopping/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/njustz/wechat_shopping/service/OrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/njustz/wechat_shopping/service/impl/OrderServiceImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/njustz/wechat_shopping/service/impl/ProductInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/njustz/wechat_shopping/service/impl/ProductInfoServiceImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -48,40 +51,55 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/impl/OrderServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+            <state relative-caret-position="108">
+              <caret line="85" column="68" selection-start-line="85" selection-start-column="68" selection-end-line="85" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/OrderService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
               <folding>
-                <element signature="e#2639#2640#0" expanded="true" />
-                <element signature="e#2666#2667#0" expanded="true" />
-                <element signature="e#2757#2758#0" expanded="true" />
-                <element signature="e#2784#2785#0" expanded="true" />
-                <element signature="e#2847#2848#0" expanded="true" />
-                <element signature="e#2874#2875#0" expanded="true" />
-                <element signature="e#2937#2938#0" expanded="true" />
-                <element signature="e#2964#2965#0" expanded="true" />
-                <element signature="e#3025#3026#0" expanded="true" />
-                <element signature="e#3052#3053#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/dto/CartDTO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/entity/OrderDetail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            <state relative-caret-position="530">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/ProductInfoService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/enums/ResultEnum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+            <state relative-caret-position="324">
+              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/njustz/wechat_shopping/service/impl/OrderServiceImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#create#0;class#OrderServiceImplTest#0" />
+                <element signature="method#findOne#0;class#OrderServiceImplTest#0" />
+                <element signature="method#findList#0;class#OrderServiceImplTest#0" />
               </folding>
             </state>
           </provider>
@@ -90,20 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/impl/ProductInfoServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/dto/OrderDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-135">
-              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            <state relative-caret-position="999">
+              <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,9 +122,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Enum" />
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -153,22 +159,24 @@
         <option value="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/enums/OderStatusEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/repository/OrderMastreRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/enums/PayStatusEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/entity/OrderDetail.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/repository/OrderMasterRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/repository/OrderDetailRepository.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/njustz/wechat_shopping/repository/OrderMasterRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/njustz/wechat_shopping/repository/OrderDetailRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/entity/OrderMaster.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/OrderService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/controller/BuyerProductController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/enums/ResultEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/exception/SellException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/utils/KeyUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/dto/OrderDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/dto/CartDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/ProductInfoService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/OrderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/converter/OrderMaster2OrderDTOConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/enums/ResultEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/impl/ProductInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/entity/OrderDetail.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/njustz/wechat_shopping/service/impl/OrderServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/impl/OrderServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -201,10 +209,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="17" />
-    <option name="y" value="8" />
-    <option name="width" value="1822" />
-    <option name="height" value="1039" />
+    <option name="x" value="118" />
+    <option name="y" value="11" />
+    <option name="width" value="1825" />
+    <option name="height" value="1059" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -212,8 +220,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -263,24 +271,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="wechat_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wechat_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wechat_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wechat_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wechat_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wechat_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wechat_shopping" type="462c0819:PsiDirectoryNode" />
               <item name="enums" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -316,16 +306,37 @@
               <item name="wechat_shopping" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wechat_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wechat_shopping" type="b2602c69:ProjectViewProjectNode" />
               <item name="wechat_shopping" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechat_shopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechat_shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechat_shopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechat_shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat_shopping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechat_shopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechat_shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat_shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -356,8 +367,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.njustz.wechat_shopping.repository" />
       <recent name="com.njustz.wechat_shopping.service.impl" />
+      <recent name="com.njustz.wechat_shopping.repository" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -375,7 +386,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.WechatShoppingApplication">
+  <component name="RunManager" selected="JUnit.OrderServiceImplTest.cancel">
     <configuration name="OrderDetailRepositoryTest.findByOrderId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wechat_shopping" />
       <extension name="coverage">
@@ -392,64 +403,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderDetailRepositoryTest.saveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderServiceImplTest.cancel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wechat_shopping" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.njustz.wechat_shopping.repository.*" />
+          <option name="PATTERN" value="com.njustz.wechat_shopping.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.njustz.wechat_shopping.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.njustz.wechat_shopping.repository.OrderDetailRepositoryTest" />
-      <option name="METHOD_NAME" value="saveTest" />
+      <option name="PACKAGE_NAME" value="com.njustz.wechat_shopping.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.njustz.wechat_shopping.service.impl.OrderServiceImplTest" />
+      <option name="METHOD_NAME" value="cancel" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderMasterRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderServiceImplTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wechat_shopping" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.njustz.wechat_shopping.repository.*" />
+          <option name="PATTERN" value="com.njustz.wechat_shopping.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.njustz.wechat_shopping.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.njustz.wechat_shopping.repository.OrderMasterRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderMasterRepositoryTest.findByBuyerOpenidTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wechat_shopping" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.njustz.wechat_shopping.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.njustz.wechat_shopping.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.njustz.wechat_shopping.repository.OrderMasterRepositoryTest" />
-      <option name="METHOD_NAME" value="findByBuyerOpenidTest" />
+      <option name="PACKAGE_NAME" value="com.njustz.wechat_shopping.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.njustz.wechat_shopping.service.impl.OrderServiceImplTest" />
+      <option name="METHOD_NAME" value="create" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderMasterRepositoryTest.saveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderServiceImplTest.findList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wechat_shopping" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.njustz.wechat_shopping.repository.*" />
+          <option name="PATTERN" value="com.njustz.wechat_shopping.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.njustz.wechat_shopping.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.njustz.wechat_shopping.repository.OrderMasterRepositoryTest" />
-      <option name="METHOD_NAME" value="saveTest" />
+      <option name="PACKAGE_NAME" value="com.njustz.wechat_shopping.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.njustz.wechat_shopping.service.impl.OrderServiceImplTest" />
+      <option name="METHOD_NAME" value="findList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceImplTest.findOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wechat_shopping" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.njustz.wechat_shopping.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.njustz.wechat_shopping.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.njustz.wechat_shopping.service.impl.OrderServiceImplTest" />
+      <option name="METHOD_NAME" value="findOne" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -464,11 +476,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OrderServiceImplTest.cancel" />
+        <item itemvalue="JUnit.OrderServiceImplTest.findList" />
+        <item itemvalue="JUnit.OrderServiceImplTest.findOne" />
+        <item itemvalue="JUnit.OrderServiceImplTest.create" />
         <item itemvalue="JUnit.OrderDetailRepositoryTest.findByOrderId" />
-        <item itemvalue="JUnit.OrderDetailRepositoryTest.saveTest" />
-        <item itemvalue="JUnit.OrderMasterRepositoryTest.findByBuyerOpenidTest" />
-        <item itemvalue="JUnit.OrderMasterRepositoryTest.saveTest" />
-        <item itemvalue="JUnit.OrderMasterRepositoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -509,7 +521,11 @@
       <workItem from="1560843311404" duration="4193000" />
       <workItem from="1560910212176" duration="726000" />
       <workItem from="1561007507570" duration="6378000" />
-      <workItem from="1561084487255" duration="2793000" />
+      <workItem from="1561084487255" duration="6856000" />
+      <workItem from="1561115377936" duration="1296000" />
+      <workItem from="1561194395153" duration="9704000" />
+      <workItem from="1561267950780" duration="12370000" />
+      <workItem from="1561351351651" duration="3315000" />
     </task>
     <task id="LOCAL-00001" summary="update OrderService">
       <created>1561041925881</created>
@@ -518,43 +534,50 @@
       <option name="project" value="LOCAL" />
       <updated>1561041925881</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update OrderService">
+      <created>1561098009555</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1561098009555</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProductInfoServiceImplTest - 2019.05.26 at 15h 39m 49s.xml">
-      <configuration name="ProductInfoServiceImplTest" configurationId="JUnit" />
+    <history-entry file="OrderServiceImplTest_create - 2019.06.22 at 18h 02m 06s.xml">
+      <configuration name="OrderServiceImplTest.create" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrderMasterRepositoryTest_saveTest - 2019.05.29 at 20h 02m 38s.xml">
-      <configuration name="OrderMasterRepositoryTest.saveTest" configurationId="JUnit" />
+    <history-entry file="OrderServiceImplTest_create - 2019.06.22 at 18h 07m 28s.xml">
+      <configuration name="OrderServiceImplTest.create" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrderMasterRepositoryTest_saveTest - 2019.05.29 at 20h 03m 22s.xml">
-      <configuration name="OrderMasterRepositoryTest.saveTest" configurationId="JUnit" />
+    <history-entry file="OrderServiceImplTest_create - 2019.06.22 at 18h 07m 39s.xml">
+      <configuration name="OrderServiceImplTest.create" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrderMasterRepositoryTest_saveTest - 2019.05.29 at 20h 06m 48s.xml">
-      <configuration name="OrderMasterRepositoryTest.saveTest" configurationId="JUnit" />
+    <history-entry file="OrderServiceImplTest_create - 2019.06.22 at 18h 07m 47s.xml">
+      <configuration name="OrderServiceImplTest.create" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrderMasterRepositoryTest - 2019.05.29 at 20h 12m 47s.xml">
-      <configuration name="OrderMasterRepositoryTest" configurationId="JUnit" />
+    <history-entry file="OrderServiceImplTest_create - 2019.06.22 at 18h 12m 15s.xml">
+      <configuration name="OrderServiceImplTest.create" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrderMasterRepositoryTest_saveTest - 2019.05.29 at 20h 15m 04s.xml">
-      <configuration name="OrderMasterRepositoryTest.saveTest" configurationId="JUnit" />
+    <history-entry file="OrderServiceImplTest_create - 2019.06.22 at 19h 17m 39s.xml">
+      <configuration name="OrderServiceImplTest.create" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrderMasterRepositoryTest_findByBuyerOpenidTest - 2019.05.29 at 20h 17m 37s.xml">
-      <configuration name="OrderMasterRepositoryTest.findByBuyerOpenidTest" configurationId="JUnit" />
+    <history-entry file="OrderServiceImplTest_findOne - 2019.06.22 at 20h 21m 20s.xml">
+      <configuration name="OrderServiceImplTest.findOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrderDetailRepositoryTest_saveTest - 2019.05.29 at 20h 28m 12s.xml">
-      <configuration name="OrderDetailRepositoryTest.saveTest" configurationId="JUnit" />
+    <history-entry file="OrderServiceImplTest_findList - 2019.06.22 at 20h 51m 58s.xml">
+      <configuration name="OrderServiceImplTest.findList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrderDetailRepositoryTest_saveTest - 2019.05.29 at 20h 31m 04s.xml">
-      <configuration name="OrderDetailRepositoryTest.saveTest" configurationId="JUnit" />
+    <history-entry file="OrderServiceImplTest_cancel - 2019.06.23 at 20h 55m 20s.xml">
+      <configuration name="OrderServiceImplTest.cancel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrderDetailRepositoryTest_findByOrderId - 2019.05.29 at 20h 36m 26s.xml">
-      <configuration name="OrderDetailRepositoryTest.findByOrderId" configurationId="JUnit" />
+    <history-entry file="OrderServiceImplTest_cancel - 2019.06.24 at 17h 21m 06s.xml">
+      <configuration name="OrderServiceImplTest.cancel" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90446000" />
+    <option name="totallyTimeSpent" value="121194000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -566,10 +589,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="83" y="0" width="1825" height="1059" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17004265" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16203967" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -579,30 +602,30 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.102345414" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2257721" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25194228" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.30874008" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.11174458" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.1108742" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32839224" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3283582" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" weight="0.16311301" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.25906184" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4989339" weight="0.52238804" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.35820895" />
       <window_info anchor="bottom" id="Spring" order="12" weight="0.3295325" />
-      <window_info anchor="bottom" id="Problems" order="13" weight="0.3297491" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.095846646" />
+      <window_info anchor="bottom" id="Problems" order="13" weight="0.32942432" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.09488273" />
       <window_info anchor="bottom" id="Messages" order="15" weight="0.3283582" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.10341151" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.10311615" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" weight="0.32997763" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32974505" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -653,13 +676,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="update OrderService" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.jar!/org/apache/logging/log4j/Level.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1470">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar!/com/mysql/jdbc/Driver.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -687,13 +703,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore" />
     <entry file="file://$PROJECT_DIR$/HELP.md" />
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/njustz/wechat_shopping/repository/ProductCategoryRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -765,27 +774,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/enums/OrderStatusEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/entity/ProductInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="729">
           <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/njustz/wechat_shopping/repository/OrderMasterRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
-          <caret line="41" column="59" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -812,23 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/enums/PayStatusEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/lang/Enum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -836,71 +811,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/enums/ProductStatusEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/lang/RuntimeException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/repository/ProductCategoryRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/entity/OrderDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/repository/ProductInfoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/enums/ResultEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/exception/SellException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/njustz/wechat_shopping/repository/OrderDetailRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -940,16 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/repository/OrderMasterRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/impl/ProductCategoryServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -982,36 +886,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/repository/OrderDetailRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/utils/KeyUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/dto/OrderDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/ProductInfoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
+        <state relative-caret-position="524">
           <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1019,17 +896,193 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/dto/OrderDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="678">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.7.RELEASE/spring-aop-5.1.7.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="487" selection-start-line="487" selection-end-line="487" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/utils/KeyUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/dto/CartDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        <state relative-caret-position="540">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/repository/ProductInfoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/repository/ProductCategoryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/njustz/wechat_shopping/repository/OrderDetailRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/repository/OrderDetailRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/njustz/wechat_shopping/repository/OrderMasterRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="661">
+          <caret line="41" column="59" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/repository/OrderMasterRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/converter/OrderMaster2OrderDTOConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/enums/PayStatusEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/enums/OrderStatusEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/exception/SellException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/enums/ProductStatusEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/enums/ResultEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/impl/ProductInfoServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="999">
+          <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/njustz/wechat_shopping/service/impl/OrderServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#create#0;class#OrderServiceImplTest#0" />
+            <element signature="method#findOne#0;class#OrderServiceImplTest#0" />
+            <element signature="method#findList#0;class#OrderServiceImplTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/entity/OrderDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1038,20 +1091,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/njustz/wechat_shopping/service/impl/OrderServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
-          <folding>
-            <element signature="e#2639#2640#0" expanded="true" />
-            <element signature="e#2666#2667#0" expanded="true" />
-            <element signature="e#2757#2758#0" expanded="true" />
-            <element signature="e#2784#2785#0" expanded="true" />
-            <element signature="e#2847#2848#0" expanded="true" />
-            <element signature="e#2874#2875#0" expanded="true" />
-            <element signature="e#2937#2938#0" expanded="true" />
-            <element signature="e#2964#2965#0" expanded="true" />
-            <element signature="e#3025#3026#0" expanded="true" />
-            <element signature="e#3052#3053#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="108">
+          <caret line="85" column="68" selection-start-line="85" selection-start-column="68" selection-end-line="85" selection-end-column="68" />
         </state>
       </provider>
     </entry>
