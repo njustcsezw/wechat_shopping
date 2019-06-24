@@ -3,6 +3,7 @@ package com.njustz.wechat_shopping.service.impl;
 import com.njustz.wechat_shopping.dto.OrderDTO;
 import com.njustz.wechat_shopping.entity.OrderDetail;
 import com.njustz.wechat_shopping.enums.OrderStatusEnum;
+import com.njustz.wechat_shopping.enums.PayStatusEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;
@@ -82,13 +83,17 @@ public class OrderServiceImplTest {
 
     @Test
     public void finish() {
-
+        OrderDTO orderDTO = orderService.findOne(ORDER_ID);
+        OrderDTO result = orderService.finish(orderDTO);
+        Assert.assertEquals(OrderStatusEnum.FINISHED.getCode(), result.getOrderStatus());
 
     }
 
     @Test
     public void paid() {
-
+        OrderDTO orderDTO = orderService.findOne(ORDER_ID);
+        OrderDTO result = orderService.paid(orderDTO);
+        Assert.assertEquals(PayStatusEnum.SUCCESS.getCode(), result.getPayStatus());
 
     }
 }
