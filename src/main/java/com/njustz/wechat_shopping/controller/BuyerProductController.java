@@ -7,7 +7,7 @@ import com.njustz.wechat_shopping.service.ProductInfoService;
 import com.njustz.wechat_shopping.utils.ResultVOUtil;
 import com.njustz.wechat_shopping.viewobject.ProductInfoVO;
 import com.njustz.wechat_shopping.viewobject.ProductVO;
-import com.njustz.wechat_shopping.viewobject.ReslutVO;
+import com.njustz.wechat_shopping.viewobject.ResultVO;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,7 +33,7 @@ public class BuyerProductController {
     private ProductCategoryService productCategoryService;
 
     @GetMapping("/list")
-    public ReslutVO list(){
+    public ResultVO list(){
         //1.查询所有的上架商品
         List<ProductInfo> productInfoList = productInfoService.findUpAll();
 

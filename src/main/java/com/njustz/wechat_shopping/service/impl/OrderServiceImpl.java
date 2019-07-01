@@ -107,7 +107,7 @@ public class OrderServiceImpl implements OrderService {
 
         List<OrderDetail> orderDetailList = orderDetailRepository.findByOrderId(orderId);
         if(CollectionUtils.isEmpty(orderDetailList)){
-            throw new SellException(ResultEnum.ORDERDETAIL_NOT_EXIST);
+            throw new SellException(ResultEnum.ORDER_DETAIL_NOT_EXIST);
         }
 
         OrderDTO orderDTO = new OrderDTO();
@@ -131,6 +131,7 @@ public class OrderServiceImpl implements OrderService {
         return orderDTOPage;
     }
 
+    //取消订单
     @Override
     @Transactional
     public OrderDTO cancel(OrderDTO orderDTO) {
@@ -171,6 +172,7 @@ public class OrderServiceImpl implements OrderService {
         return orderDTO;
     }
 
+    //完结订单
     @Override
     public OrderDTO finish(OrderDTO orderDTO) {
 
@@ -195,6 +197,7 @@ public class OrderServiceImpl implements OrderService {
         return orderDTO;
     }
 
+    //支付订单
     @Override
     @Transactional
     public OrderDTO paid(OrderDTO orderDTO) {
