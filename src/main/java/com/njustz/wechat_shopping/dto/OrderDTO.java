@@ -1,6 +1,9 @@
 package com.njustz.wechat_shopping.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.njustz.wechat_shopping.entity.OrderDetail;
+import com.njustz.wechat_shopping.utils.serializer.Date2LongSerializer;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -14,6 +17,7 @@ import java.util.List;
  */
 
 @Data
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class OrderDTO {
 
     private String orderId;
@@ -36,8 +40,10 @@ public class OrderDTO {
     //订单付款状态 0表示等待支付，1表示支付成功
     private Integer payStatus;
 
+    @JsonSerialize(using = Date2LongSerializer.class)
     private Date createTime;
 
+    @JsonSerialize(using = Date2LongSerializer.class)
     private Date updateTime;
 
     private List<OrderDetail> orderDetailList;
